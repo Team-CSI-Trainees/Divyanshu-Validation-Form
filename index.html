@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVYANSHU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h-primary">Registration</h1>
+    <p id="end"></p>
+    <section id="formdata">
+        <form action=""   name="myform">
+            <input type="text" class="items" name="name" placeholder="Enter your name">
+            <p id="warn1"></p>
+            <input type="phone" class="items" name="phone" placeholder="Phone Number">
+            <p id="warn2"></p>
+            <input type="email" name="email" class="items" placeholder="Email ID">
+            <p id="warn3"></p>
+            <span id="radio">
+            <label for="gender">Gender:</label>
+            Male<input type="radio" name="gender" id="gender" value="Male">
+            Female<input type="radio" name="gender" id="gender" value="Female">
+            </span>
+            <input type="password" placeholder="Enter your Password">
+            <input type="button" value="Submit" onclick="return validateform()">
+        </form>
+        
+    </section>
+    <button onclick="window.location.reload()">Refresh</button>
+   <script src="index.js"></script> 
+</body>
+</html>
