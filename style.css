@@ -3,25 +3,85 @@
         margin: 0;
         padding: 0;
     }
+    body::before{
+        content:"";
+        height:100vh;
+        width:100vw;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.8;
+        background: url("/hd-wallpaper-g53994eb8e_1920.jpg") no-repeat center center/cover;
+    }
+    body{
+        position: relative;
+    }
     .h-primary{
         font-size: 3rem;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-content{
+        font-size: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        display: none;
     }
     #formdata form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 2rem;
     }
     #formdata form input{
         margin: 0.8rem;
         padding: 0.5rem;
         width: 50%;
+        border-radius: 2px;
+    }
+    #formdata form input:focus{
+        border:2px solid yellow;
+        background-color: cyan;
+    }
+
+    input[placeholder]{
+        font-size: 1.2rem;
     }
     #radio{
         display: flex;
+        position:relative;
+        margin-left:-5rem;
+        font-size: 1.2rem;
         /* flex-direction: row; */
-        margin: auto;
+        /* margin: auto; */
+    }
+    .warning{
+        color: red;
+        background-color: rgba(255,255,255,0.5);
+    }
+    .btn{
+        display: block;
+        padding: 0.5rem;
+        cursor: pointer;
+        background-color: brown;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bold;
+        margin:2px;
+    }
+    #buttons{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
     }
 
 
