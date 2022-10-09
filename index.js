@@ -2,6 +2,8 @@ var c=0;
 let pw1=document.forms["myform"]["password2"];
 let em=document.getElementById("suggestion");
 let w3=document.getElementById("warn4");
+let re=document.getElementById("refresh");
+re.style.display="none";
 pw1.style.display="none";
 em.style.display="none";
 function show() {
@@ -94,6 +96,8 @@ function validateform() {
     document.getElementById("submit").style.display="none";
     document.getElementById("first").style.display="none";
     document.getElementById("container").style.height="100vh";
+    re.style.display="block";
+    document.getElementById("reset").style.display="none";
     f1.innerHTML="<h1>Your Form is Submitted</h1>";
    let name=document.forms["myform"]["name"].value;
    let phone=document.forms["myform"]["phone"].value;
