@@ -113,7 +113,7 @@ function validateform() {
     document.getElementById("detail3").innerHTML="<span>Email:"+email+"</span>";
     document.getElementById("detail4").innerHTML="<span>Gender:"+gender+"</span>";
     document.getElementById("detail5").innerHTML="<span>DOB:"+dob+"</span>";
-    document.getElementById("detail6").innerHTML="<span>Address"+add+"</span>";
+    document.getElementById("detail6").innerHTML="<span>Address:"+add+"</span>";
 }
 
 
