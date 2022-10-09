@@ -1,14 +1,14 @@
 var c=0;
 let em=document.getElementById("suggestion");
 em.style.display="none";
-let w3=document.getElementById("warn4");
 function show() {
     em.style.display="block";
+    // w3.style.display="none";
 }
 function hide() {
+    let w3=document.getElementById("warn4");
     em.style.display="none";
     let pw=document.forms["myform"]["password"].value;
-    let pw1=document.forms["myform"]["password2"].value;
     console.log(pw);
     console.log(w3);
     console.log(pw.length);
@@ -16,11 +16,13 @@ function hide() {
     {console.log("condition checked");
     w3.style.display="block";
     w3.innerHTML="<h3>Password length must be at least 6 Characters</h3>";
+    return 0;
     }
    else
    {w3.style.display="none";
    return 1;
-    }   
+    }
+   
 }
 function validateform() {
     let w1=document.getElementById("warn1");
@@ -60,3 +62,13 @@ function validateform() {
     f1.innerHTML="<h1>Your Form is Submitted</h1>";}
    c=0; 
     
+}
+
+
+
+
+
+
+
+
+
