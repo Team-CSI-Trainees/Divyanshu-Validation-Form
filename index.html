@@ -8,35 +8,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="container">
     <section id="above">
-
-    <h1 class="h-primary">Registration</h1>
-        <p id="end" class="h-content"></p>
+    <h1 class="h-primary" id="first">Registration</h1>
+    <p id="end" class="h-content"></p>
+    <section id="detail">
+        <p id="detailhead" class="details"></p>
+        <p id="detail1" class="details"></p>
+        <p id="detail2" class="details"></p>
+        <p id="detail3" class="details"></p>
+        <p id="detail4" class="details"></p>
+        <p id="detail5" class="details"></p>
+        <p id="detail6" class="details"></p>
+    </section>
     </section>
     <section id="formdata">
-        <form action=""   name="myform">
-            <input type="text" class="items" name="name" placeholder="Enter your name">
+        <form action=""  name="myform">
+            <input type="text" class="items" name="name" placeholder="*Enter your name">
             <p id="warn1" class="warning"></p>
-            <input type="phone" class="items" name="phone" placeholder="Phone Number">
+            <input type="phone" class="items" name="phone" placeholder="*Phone Number">
             <p id="warn2" class="warning"></p>
-            <input type="email" name="email" class="items"  placeholder="Email ID">
+            <input type="email" name="email" class="items"  placeholder="*Email ID">
             <p id="warn3" class="warning"></p>
-            <span id="radio">
-            <label for="gender">Gender:</label><label for="male">Male</label>
-            <input type="radio" name="gender" id="male" value="Male">
+            <label for="dob" style="font-weight:bold ;" class="items">*DOB:</label>
+            <input type="date" name="dob" id="dob" placeholder="DOB" class="items">            
+            <p id="warn6" class="warning"></p>
+            <span id="radio" class="items">
+            <label for="gender">Gender:</label><label for="male">&nbsp;Male</label>
+            <input type="radio" name="gender" id="male" value="Male" >
             <label for="female">Female</label>
             <input type="radio" name="gender" id="female" value="Female">
             </span>
-            <input type="password"  name="password" placeholder="Enter your Password" onfocus="show()" onmouseout="hide()">
-            <p id="suggestion" style="color:white ;">(Use Uppercase Letters and Lowercase letters and special symbols.There should be at least 6 characters.)</p>
+            <p id="warn7" class="warning"></p>
+            <label for="add" style="font-weight: bold;" class="items">Address:</label>
+            <textarea name="address" id="add" cols="30" rows="10" placeholder="Locality" class="items"></textarea>
+            <input type="password"  name="password" id="passwd" placeholder="Enter your Password" class="items" onfocus="show()" onmouseleave="hide()">
+            <div id="suggestion" style="color:white ;" class="items">Use Uppercase Letters and Lowercase letters <br> special symbols.There should be at least 6 characters.</div>
             <p id="warn4" class="warning"></p>
-            <input type="password" id="passwd2" name="password2" placeholder="Confirm Password">
-        </form>
-        
+            <input type="password" id="passwd2" name="password2" placeholder="Confirm Password" class="items" onmouseleave="passwdchecker()">
+            <p id="warn5" class="warning" ></p>
+        </form>    
     </section>
     <span id="buttons">
     <input type="button" value="Submit" onclick="validateform()" class="btn" id="submit">
     <button onclick="window.location.reload()" id="refresh" class="btn">Refresh</button></span>
+    </div>
+    <footer>Copyright &copy; 2022 www.drservices.com</footer>
    <script src="index.js"></script> 
 </body>
 </html>
