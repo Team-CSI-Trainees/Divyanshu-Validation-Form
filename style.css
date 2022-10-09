@@ -14,6 +14,9 @@
         opacity: 0.8;
         background: url("hd-wallpaper-g53994eb8e_1920.jpg") no-repeat center center/cover;
     }
+    #refresh{
+     display:none;}
+
     #container{
         display: flex;
         flex-direction: column;
