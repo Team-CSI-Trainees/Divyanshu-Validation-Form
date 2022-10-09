@@ -4,7 +4,6 @@ em.style.display="none";
 let w3=document.getElementById("warn4");
 function show() {
     em.style.display="block";
-    // w3.style.display="none";
 }
 function hide() {
     em.style.display="none";
