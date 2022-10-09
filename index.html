@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="above">
+
     <h1 class="h-primary">Registration</h1>
-    <p id="end" class="h-content"></p>
+        <p id="end" class="h-content"></p>
+    </section>
     <section id="formdata">
         <form action=""   name="myform">
             <input type="text" class="items" name="name" placeholder="Enter your name">
@@ -24,13 +27,15 @@
             <label for="female">Female</label>
             <input type="radio" name="gender" id="female" value="Female">
             </span>
-            <input type="password" id="passwd" placeholder="Enter your Password" onfocus="hide()">
-            <p id="suggestion">Use Uppercase Letters and Lowercase letters and special symbols.There should be at least 6 characters. </p>
+            <input type="password"  name="password" placeholder="Enter your Password" onfocus="show()" onmouseout="hide()">
+            <p id="suggestion" style="color:white ;">(Use Uppercase Letters and Lowercase letters and special symbols.There should be at least 6 characters.)</p>
+            <p id="warn4" class="warning"></p>
+            <input type="password" id="passwd2" name="password2" placeholder="Confirm Password">
         </form>
         
     </section>
     <span id="buttons">
-    <input type="button" value="Submit" onclick="return validateform()" class="btn" id="submit">
+    <input type="button" value="Submit" onclick="validateform()" class="btn" id="submit">
     <button onclick="window.location.reload()" id="refresh" class="btn">Refresh</button></span>
    <script src="index.js"></script> 
 </body>
