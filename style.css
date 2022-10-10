@@ -11,8 +11,8 @@
         top:0;
         left: 0;
         z-index: -1;
-        opacity: 0.8;
-        background: url("hd-wallpaper-g53994eb8e_1920.jpg") no-repeat center center/cover;
+        opacity: 0.5;
+        background: url("Screenshot\ \(37\).png") no-repeat center center/cover;
     }
     #refresh{
      display:none;}
