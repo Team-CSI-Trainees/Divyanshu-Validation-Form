@@ -24,11 +24,13 @@
     </section>
     <section id="formdata">
         <form action=""  name="myform">
-            <input type="text" class="items" name="name" placeholder="*Enter your name">
+            <input type="text" class="items" name="username" id="username" placeholder="*User name">
+            <p id="warnuser" class="warning"></p>
+            <input type="text" class="items" name="name" id="name" placeholder="*Enter your name">
             <p id="warn1" class="warning"></p>
-            <input type="phone" class="items" name="phone" placeholder="*Phone Number">
+            <input type="phone" class="items" name="phone" id="phone"  placeholder="*Phone Number" autocomplete="off">
             <p id="warn2" class="warning"></p>
-            <input type="email" name="email" class="items"  placeholder="*Email ID">
+            <input type="email" name="email" class="items" id="email" placeholder="*Email ID">
             <p id="warn3" class="warning"></p>
             <label for="dob" style="font-weight:bold ;" class="items">*DOB:</label>
             <input type="date" name="dob" id="dob" placeholder="DOB" class="items">            
@@ -41,10 +43,11 @@
             </span>
             <p id="warn7" class="warning"></p>
             <label for="add" style="font-weight: bold;" class="items">Address:</label>
-            <textarea name="address" id="add" cols="30" rows="4" placeholder="Locality" class="items"></textarea>
-            <input type="password"  name="password" id="passwd" placeholder="Enter your Password" class="items" onfocus="show()" onmouseleave="hide()">
-            <div id="suggestion" style="color:white ;" class="items">Use Uppercase Letters and Lowercase letters <br> special symbols.There should be at least 6 characters.</div>
+            <textarea name="address" id="add" cols="30" rows="10" placeholder="Locality" class="items"></textarea>
+            <input type="password"  name="password" id="passwd" placeholder="Enter your Password" class="items" onmouseover="show()" onmouseleave="hide()">
+            <div id="suggestion" style="color:white ;background-color: black;" class="items">(Use Uppercase Letters and Lowercase letters <br> special symbols.There should be at least 6 characters.)</div>
             <p id="warn4" class="warning"></p>
+            <p id="warn8" class="warning"></p>
             <input type="password" id="passwd2" name="password2" placeholder="Confirm Password" class="items" onmouseleave="passwdchecker()">
             <p id="warn5" class="warning" ></p>
         </form>    
