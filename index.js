@@ -78,7 +78,7 @@ email.addEventListener('blur',()=>{
 })
 const username=document.getElementById("username");
 username.addEventListener('blur',()=>{
-    let regex3=/^[a-zA-z]([0-9a-zA-Z]){2,10}$/;
+    let regex3=/^[a-zA-z]([0-9a-zA-Z]){2,20}$/;
     let val2=username.value;
     if (regex3.test(val2)) {
         wuser.style.display="none";
