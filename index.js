@@ -44,7 +44,7 @@ name_.addEventListener('blur',()=>{
     }
     else
     {   w1.style.display="block";
-        document.getElementById('warn2').innerHTML='<h3>Fill Name correctly!!</h3>';
+        document.getElementById('warn1').innerHTML='<h3>Fill Name correctly!!</h3>';
         n=0;
     }
 })
